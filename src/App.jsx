@@ -28,28 +28,17 @@ function App() {
   const array = ['❤️', '✨', '💀'];
 
   return (
-    <>
-      <Header />
-      <Food></Food>
-      <Card></Card>
-      <Button></Button>
-      <Student></Student>
-      <List></List>
-      <ProfilePicture></ProfilePicture>
-      <MyComponent></MyComponent>
-      <Counter></Counter>
-      <ColorPicker></ColorPicker>
-      <MyFavoriteCar></MyFavoriteCar>
-      <UpdateList></UpdateList>
-      <ListCar></ListCar>
-      <ToDoList></ToDoList>
-      <UseEffect></UseEffect>
-      <WidthHeight></WidthHeight>
-      <DigitalClock></DigitalClock>
-      <ComponentA></ComponentA>
-      <ComponentRef></ComponentRef>
-      <StopWatch></StopWatch>
-      <Footer />
+  <>
+  <section>
+    <div className="list">
+      <ul>
+        <li><a href="/button">Button</a></li>
+        <li><a href="/card">Card</a></li>
+        <li><a href="/colorPicker">Color Picker</a></li>
+      </ul>
+    </div>
+  <div className="animation"></div>
+</section>
     </>
     
   );

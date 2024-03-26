@@ -5,28 +5,36 @@ import './index.css'
 import HomePage from './HomePage.jsx'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import NotFoundPage from './NotFoundPage.jsx'
-import ProfilesPage from './ProfilesPage.jsx'
-import ProfilePage from './ProfilePage.jsx'
+import Button from './Button.jsx'
+import Card from './Card.jsx'
+import ColorPicker from './ColorPicker.jsx'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <HomePage />,
+    element: <App />,
     errorElement: <NotFoundPage />,
-    
   },
   {
-    path: '/profiles',
-    element: <ProfilesPage />,
+    path: '/button',
+    element: <Button />,
+    errorElement: <NotFoundPage />,
   },
   {
-    path: '/profiles/:profileId',
-    element: <ProfilePage />,
+    path: '/card',
+    element: <Card />,
+    errorElement: <NotFoundPage />,
   },
+  {
+    path: '/colorPicker',
+    element: <ColorPicker />,
+    errorElement: <NotFoundPage />,
+  },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App/>
+    <RouterProvider router={router}/>
   </React.StrictMode>,
 );
