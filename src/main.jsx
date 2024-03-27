@@ -8,6 +8,10 @@ import NotFoundPage from './NotFoundPage.jsx'
 import Button from './Button.jsx'
 import Card from './Card.jsx'
 import ColorPicker from './ColorPicker.jsx'
+import ComponentA from './ComponentA.jsx'
+import ComponentB from './ComponentB.jsx'
+import ComponentC from './ComponentC.jsx'
+import ComponentD from './ComponentD.jsx'
 
 const router = createBrowserRouter([
   {
@@ -30,6 +34,12 @@ const router = createBrowserRouter([
     element: <ColorPicker />,
     errorElement: <NotFoundPage />,
   },
+  {
+    path: '/componentA',
+    element: <ComponentA />,
+    errorElement: <NotFoundPage />,
+  },
+  
 
 ]);
 
