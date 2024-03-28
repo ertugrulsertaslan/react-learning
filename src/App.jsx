@@ -37,6 +37,7 @@ function App() {
         <li><a href="/colorPicker">Color Picker</a></li>
         <li><a href="/componentA">Components</a></li>
         <li><a href="/componentRef">ComponentRef</a></li>
+        <li><a href="/counter">Counter</a></li>
       </ul>
     </div>
   <div className="animation"></div>

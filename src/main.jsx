@@ -13,6 +13,7 @@ import ComponentB from './ComponentB.jsx'
 import ComponentC from './ComponentC.jsx'
 import ComponentD from './ComponentD.jsx'
 import ComponentRef from './ComponentRef.jsx'
+import Counter from './Counter.jsx'
 
 const router = createBrowserRouter([
   {
@@ -45,8 +46,11 @@ const router = createBrowserRouter([
     element: <ComponentRef />,
     errorElement: <NotFoundPage />,
   },
-  
-
+  {
+    path: '/counter',
+    element: <Counter />,
+    errorElement: <NotFoundPage />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
