@@ -12,6 +12,7 @@ import ComponentA from './ComponentA.jsx'
 import ComponentB from './ComponentB.jsx'
 import ComponentC from './ComponentC.jsx'
 import ComponentD from './ComponentD.jsx'
+import ComponentRef from './ComponentRef.jsx'
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,11 @@ const router = createBrowserRouter([
   {
     path: '/componentA',
     element: <ComponentA />,
+    errorElement: <NotFoundPage />,
+  },
+  {
+    path: '/componentRef',
+    element: <ComponentRef />,
     errorElement: <NotFoundPage />,
   },
   

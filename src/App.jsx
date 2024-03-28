@@ -36,6 +36,7 @@ function App() {
         <li><a href="/card">Card</a></li>
         <li><a href="/colorPicker">Color Picker</a></li>
         <li><a href="/componentA">Components</a></li>
+        <li><a href="/componentRef">ComponentRef</a></li>
       </ul>
     </div>
   <div className="animation"></div>
