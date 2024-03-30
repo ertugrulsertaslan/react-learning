@@ -38,6 +38,8 @@ function App() {
         <li><a href="/componentA">Components</a></li>
         <li><a href="/componentRef">ComponentRef</a></li>
         <li><a href="/counter">Counter</a></li>
+        <li><a href="/food">Food</a></li>
+        <li><a href="/footer">Footer</a></li>
       </ul>
     </div>
   <div className="animation"></div>
