@@ -16,6 +16,7 @@ import ComponentRef from './ComponentRef.jsx'
 import Counter from './Counter.jsx'
 import Food from './Food.jsx'
 import Footer from './Footer.jsx'
+import Header from './Header.jsx'
 
 const router = createBrowserRouter([
   {
@@ -61,6 +62,11 @@ const router = createBrowserRouter([
   {
     path: '/footer',
     element: <Footer />,
+    errorElement: <NotFoundPage />,
+  },
+  {
+    path: '/header',
+    element: <Header />,
     errorElement: <NotFoundPage />,
   },
 ]);
