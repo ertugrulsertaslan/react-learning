@@ -19,6 +19,7 @@ function App() {
         <li><a href="/food">Food</a></li>
         <li><a href="/footer">Footer</a></li>
         <li><a href="/header">Header</a></li>
+        <li><a href="/list">List</a></li>
       </ul>
     </div>
   <div className="animation"></div>
