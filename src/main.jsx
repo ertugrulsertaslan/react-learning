@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import HomePage from './HomePage.jsx'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import NotFoundPage from './NotFoundPage.jsx'
 import Button from './Button.jsx'
@@ -17,6 +16,8 @@ import Counter from './Counter.jsx'
 import Food from './Food.jsx'
 import Footer from './Footer.jsx'
 import Header from './Header.jsx'
+import List from './List.jsx'
+import ListCar from './ListCar.jsx'
 
 const router = createBrowserRouter([
   {
@@ -72,6 +73,11 @@ const router = createBrowserRouter([
   {
     path: '/list',
     element: <List />,
+    errorElement: <NotFoundPage />,
+  },
+  {
+    path: '/listCar',
+    element: <ListCar />,
     errorElement: <NotFoundPage />,
   },
 ]);
