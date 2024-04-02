@@ -18,6 +18,7 @@ import Footer from './Footer.jsx'
 import Header from './Header.jsx'
 import List from './List.jsx'
 import ListCar from './ListCar.jsx'
+import MyComponent from './MyComponent.jsx'
 
 const router = createBrowserRouter([
   {
@@ -78,6 +79,11 @@ const router = createBrowserRouter([
   {
     path: '/listCar',
     element: <ListCar />,
+    errorElement: <NotFoundPage />,
+  },
+  {
+    path: '/myComponent',
+    element: <MyComponent />,
     errorElement: <NotFoundPage />,
   },
 ]);

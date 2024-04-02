@@ -21,6 +21,7 @@ function App() {
         <li><a href="/header">Header</a></li>
         <li><a href="/list">List</a></li>
         <li><a href="/listCar">ListCar</a></li>
+        <li><a href="/myComponent">My Component</a></li>
       </ul>
     </div>
   <div className="animation"></div>
