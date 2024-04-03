@@ -20,6 +20,7 @@ import List from './List.jsx'
 import ListCar from './ListCar.jsx'
 import MyComponent from './MyComponent.jsx'
 import MyFavoriteCar from './MyFavoriteCar.jsx'
+import ProfilePicture from './ProfilePicture.jsx'
 
 const router = createBrowserRouter([
   {
@@ -90,6 +91,11 @@ const router = createBrowserRouter([
   {
     path: '/myFavoriteCar',
     element: <MyFavoriteCar />,
+    errorElement: <NotFoundPage />,
+  },
+  {
+    path: '/profilePicture',
+    element: <ProfilePicture />,
     errorElement: <NotFoundPage />,
   },
 ]);
