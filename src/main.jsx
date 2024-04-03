@@ -19,6 +19,7 @@ import Header from './Header.jsx'
 import List from './List.jsx'
 import ListCar from './ListCar.jsx'
 import MyComponent from './MyComponent.jsx'
+import MyFavoriteCar from './MyFavoriteCar.jsx'
 
 const router = createBrowserRouter([
   {
@@ -84,6 +85,11 @@ const router = createBrowserRouter([
   {
     path: '/myComponent',
     element: <MyComponent />,
+    errorElement: <NotFoundPage />,
+  },
+  {
+    path: '/myFavoriteCar',
+    element: <MyFavoriteCar />,
     errorElement: <NotFoundPage />,
   },
 ]);
