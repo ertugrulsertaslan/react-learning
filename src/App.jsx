@@ -24,6 +24,7 @@ function App() {
         <li><a href="/myComponent">My Component</a></li>
         <li><a href="/myFavoriteCar">My Favorite Car</a></li>
         <li><a href="/profilePicture">Profile Picture</a></li>
+        <li><a href="/useEffect">UseEffect</a></li>
       </ul>
     </div>
   <div className="animation"></div>
