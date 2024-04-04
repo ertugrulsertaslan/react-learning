@@ -25,6 +25,7 @@ function App() {
         <li><a href="/myFavoriteCar">My Favorite Car</a></li>
         <li><a href="/profilePicture">Profile Picture</a></li>
         <li><a href="/useEffect">UseEffect</a></li>
+        <li><a href="/student">Student</a></li>
       </ul>
     </div>
   <div className="animation"></div>

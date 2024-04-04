@@ -22,6 +22,7 @@ import MyComponent from './MyComponent.jsx'
 import MyFavoriteCar from './MyFavoriteCar.jsx'
 import ProfilePicture from './ProfilePicture.jsx'
 import UseEffect from './UseEffect.jsx'
+import Student from './Student.jsx'
 
 const router = createBrowserRouter([
   {
@@ -102,6 +103,11 @@ const router = createBrowserRouter([
   {
     path: '/useEffect',
     element: <UseEffect />,
+    errorElement: <NotFoundPage />,
+  },
+  {
+    path: '/student',
+    element: <Student />,
     errorElement: <NotFoundPage />,
   },
 ]);
