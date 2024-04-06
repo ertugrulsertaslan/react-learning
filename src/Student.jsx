@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 function Student(props){
     return(
-        <div className="student">
+        <div className="font-sans p-2.5 border-2 border-slate-800">
             <p>Name: {props.name}</p>
             <p>Age: {props.age}</p>
             <p>Student: {props.isStudent ? "Yes" : "No"}</p>
