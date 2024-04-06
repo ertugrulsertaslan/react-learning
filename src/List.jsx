@@ -10,8 +10,10 @@ function List(props){
                                             </li>);
 
     return (<>
-            <h3 className="list-category">{props.category}</h3>
-            <ol className="list-items">{listItems}</ol>
+                <div>
+                    <h3 className="font-bold text-center mb-3 text-xl border-2 rounded-md border-gray-800 bg-blue-600 text-white">{props.category}</h3>
+                    <ol className="text-center">{listItems}</ol>
+                </div>
             </>
     );
 }

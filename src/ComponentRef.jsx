@@ -7,7 +7,7 @@ function ComponentRef(){
     const inputRef3 = useRef(null);
 
     useEffect( () => {
-        console.log("COMPONENT RENDERED");
+        
     })
 
     function handleClick1(){

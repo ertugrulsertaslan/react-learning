@@ -15,7 +15,6 @@ import ComponentRef from './ComponentRef.jsx'
 import Counter from './Counter.jsx'
 import Food from './Food.jsx'
 import Footer from './Footer.jsx'
-import Header from './Header.jsx'
 import List from './List.jsx'
 import ListCar from './ListCar.jsx'
 import MyComponent from './MyComponent.jsx'
@@ -23,6 +22,7 @@ import MyFavoriteCar from './MyFavoriteCar.jsx'
 import ProfilePicture from './ProfilePicture.jsx'
 import UseEffect from './UseEffect.jsx'
 import Student from './Student.jsx'
+import UpdateList from './UpdateList.jsx'
 
 const router = createBrowserRouter([
   {
@@ -71,11 +71,6 @@ const router = createBrowserRouter([
     errorElement: <NotFoundPage />,
   },
   {
-    path: '/header',
-    element: <Header />,
-    errorElement: <NotFoundPage />,
-  },
-  {
     path: '/list',
     element: <List />,
     errorElement: <NotFoundPage />,
@@ -108,6 +103,11 @@ const router = createBrowserRouter([
   {
     path: '/student',
     element: <Student />,
+    errorElement: <NotFoundPage />,
+  },
+  {
+    path: '/updateList',
+    element: <UpdateList />,
     errorElement: <NotFoundPage />,
   },
 ]);
