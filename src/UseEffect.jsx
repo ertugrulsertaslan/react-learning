@@ -21,10 +21,13 @@ function UseEffect(){
     }
 
     return(<>
-        <p>Count: {count}</p>
-        <button onClick={addCount}>Add</button>
-        <button onClick={subtractCount}>Subtract</button><br/>
-        <button onClick={changeColor}>Change Color</button>
+        <div className="text-center">
+            <p className="w-40 m-4 bg-violet-700 p-1 text-white">Count: {count}</p>
+            <button className="w-20 m-2 bg-violet-500 p-1 text-white" onClick={addCount}>Add</button>
+            <button className="w-20 m-2 bg-violet-500 p-1 text-white" onClick={subtractCount}>Subtract</button><br/>
+            <button className="w-30 m-2 bg-violet-500 p-1 text-white" onClick={changeColor}>Change Color</button>
+        </div>
+            
     </>);
 }
 export default UseEffect

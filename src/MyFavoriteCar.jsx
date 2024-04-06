@@ -15,11 +15,11 @@ function MyFavoriteCar() {
     function handleModelChange(event){
         setCar(c => ({...c , model : event.target.value }));
     }
-    return (<div>
-            <p>Your favorite car is : {car.year} {car.make} {car.model}</p>
-              <input type="number" value={car.year} onChange={handleYearChange} /><br/>
-              <input type="text" value={car.make} onChange={handleMakeChange} /><br/>
-              <input type="text" value={car.model} onChange={handleModelChange} />
+    return (<div className="text-center">
+            <p className="m-1 font-sans font-bold">Your Favorite Car Is : <br/> {car.year} {car.make} {car.model}</p>
+              <input type="text" className="bg-gray-400 p-1 m-1" value={car.year} onChange={handleYearChange} maxLength = "4"/><br/>
+              <input type="text" className="bg-gray-400 p-1 m-1" value={car.make} onChange={handleMakeChange}  maxLength="13"/><br/>
+              <input type="text" className="bg-gray-400 p-1 m-1" value={car.model} onChange={handleModelChange}  maxLength="10"/>
             </div>
             );
 }

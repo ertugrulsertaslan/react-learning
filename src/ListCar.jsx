@@ -48,12 +48,10 @@ function ListCar() {
                     {car.year} {car.make} {car.model}
                 </li>)}
                 </ul>
-
-                    <input type="number" className="border border-gray-600 m-1" value={carYear} onChange={handleYearChange} /><br/>
-                    <input type="text" className="border border-gray-600 m-1" placeholder="Enter car make" value={carMake}  onChange={handleMakeChange} /><br/>
-                    <input type="text" className="border border-gray-600 m-1" placeholder="Enter car model" value={carModel}  onChange={handleModelChange} /><br/>
-                    <button onClick={handleAddCar} className="ms-14 mt-1">Add Car</button>
-
+                    <input type="text" className="border border-gray-400 m-1 bg-orange-400 text-white text-bold" value={carYear} onChange={handleYearChange} maxLength="4" /><br/>
+                    <input type="text" className="border border-gray-400 m-1 bg-orange-400 text-white text-bold placeholder-white" placeholder="Enter car make" value={carMake}  maxLength="8" onChange={handleMakeChange}/><br/>
+                    <input type="text" className="border border-gray-400 m-1 bg-orange-400 text-white text-bold placeholder-white" placeholder="Enter car model" value={carModel}  maxLength="8" onChange={handleModelChange}/><br/>
+                    <button onClick={handleAddCar} className="mt-1 bg-amber-400 w-48">Add Car</button>
             </div>
             );
 
