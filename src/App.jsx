@@ -1,35 +1,30 @@
 import React, {useState} from "react";
+import './index.css';
+import Button from "./Button";
+import Card from "./Card";
+import Student from "./Student.jsx";
+import ComponentA from "./ComponentA.jsx";
 
-
+import ColorPicker from "./ColorPicker";
 function App() {
 
   const array = ['❤️', '✨', '💀'];
 
   return (
   <>
-  <section>
-    <div className="list">
-      <ul>
-        <li><a href="/button">Button</a></li>
-        <li><a href="/card">Card</a></li>
-        <li><a href="/colorPicker">Color Picker</a></li>
-        <li><a href="/componentA">Components</a></li>
-        <li><a href="/componentRef">ComponentRef</a></li>
-        <li><a href="/counter">Counter</a></li>
-        <li><a href="/food">Food</a></li>
-        <li><a href="/footer">Footer</a></li>
-        <li><a href="/header">Header</a></li>
-        <li><a href="/list">List</a></li>
-        <li><a href="/listCar">ListCar</a></li>
-        <li><a href="/myComponent">My Component</a></li>
-        <li><a href="/myFavoriteCar">My Favorite Car</a></li>
-        <li><a href="/profilePicture">Profile Picture</a></li>
-        <li><a href="/useEffect">UseEffect</a></li>
-        <li><a href="/student">Student</a></li>
-      </ul>
-    </div>
-  <div className="animation"></div>
-</section>
+    <div className="flex items-center justify-center">
+      <div className = "grid grid-cols-3 gap-10">
+            <div className="w-60 h-60 flex items-center justify-center"><Button /></div>
+              <div className="w-60 h-60 flex items-center justify-center"><Card /></div>
+              <div className="w-60 h-60 flex items-center justify-center"><ColorPicker/></div>
+              <div className="w-60 h-60 flex items-center justify-center"><Student name="Ertugrul" age={24} isStudent={true} /></div>
+              <div className="w-60 h-60 flex items-center justify-center"><ComponentA/></div>
+              <div className="w-60 h-60 flex items-center justify-center">06</div>
+              <div className="w-60 h-60 flex items-center justify-center">07</div>
+              <div className="w-60 h-60 flex items-center justify-center">08</div>
+              <div className="w-60 h-60 flex items-center justify-center">09</div>
+            </div>
+      </div>   
     </>
     
   );
