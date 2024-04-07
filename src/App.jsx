@@ -15,6 +15,7 @@ import MyComponent from "./MyComponent.jsx";
 import MyFavoriteCar from "./MyFavoriteCar.jsx";
 import ProfilePicture from "./ProfilePicture.jsx";
 import  UseEffect from "./UseEffect.jsx";
+import UpdateList from "./UpdateList.jsx";
 function App() {
 
   const fruits = [{id: 1, name: "Apple", calories: 95},
@@ -42,6 +43,7 @@ function App() {
               <div className="w-60 h-60 flex items-center justify-center"><MyFavoriteCar /></div>
               <div className="w-60 h-60 flex items-center justify-center"><ProfilePicture /></div>
               <div className="w-60 h-60 flex items-center justify-center"><UseEffect /></div>
+              <div className="w-60 h-60 flex items-center justify-center"><UpdateList /></div>
             </div>
       </div>   
     </>
