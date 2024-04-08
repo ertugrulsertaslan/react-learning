@@ -21,6 +21,7 @@ import WidthHeight from "./WidthHeight.jsx";
 import MusicPlayer from "./MusicPlayer.jsx";
 function App() {
 
+  
   const fruits = [{id: 1, name: "Apple", calories: 95},
                   {id: 2, name: "Orange", calories: 75},
                   {id: 3, name: "Banane", calories: 105},
