@@ -27,8 +27,11 @@ function WidthHeight(){
         setHeight(window.innerHeight); 
     }
     return(<>
-        <p onChange={handleResize}>Window Width: {width}px</p>
-        <p onChange={handleResize}>Window Height: {height}px</p>
+    <div className="text-center">
+        <p className="bg-red-500 p-3 m-3 text-white" onChange={handleResize}>Window Width: {width}px</p>
+        <p className="bg-red-500 p-3 m-3 text-white" onChange={handleResize}>Window Height: {height}px</p>
+    </div>
+        
     </>);
 }
 export default WidthHeight

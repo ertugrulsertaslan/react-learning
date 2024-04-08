@@ -16,6 +16,9 @@ import MyFavoriteCar from "./MyFavoriteCar.jsx";
 import ProfilePicture from "./ProfilePicture.jsx";
 import  UseEffect from "./UseEffect.jsx";
 import UpdateList from "./UpdateList.jsx";
+import UserGreeting from "./UserGreeting.jsx";
+import WidthHeight from "./WidthHeight.jsx";
+import MusicPlayer from "./MusicPlayer.jsx";
 function App() {
 
   const fruits = [{id: 1, name: "Apple", calories: 95},
@@ -27,7 +30,7 @@ function App() {
   return (
   <>
     <div className="flex items-center justify-center bg-gradient-to-b from-teal-200 to-slate-50">
-      <div className = "grid grid-cols-3 gap-10 my-10">
+      <div className = "grid grid-cols-3 gap-10 my-20">
               <div className="w-60 h-60 flex items-center justify-center"><Button /></div>
               <div className="w-60 h-60 flex items-center justify-center"><Card /></div>
               <div className="w-60 h-60 flex items-center justify-center"><ColorPicker/></div>
@@ -44,6 +47,10 @@ function App() {
               <div className="w-60 h-60 flex items-center justify-center"><ProfilePicture /></div>
               <div className="w-60 h-60 flex items-center justify-center"><UseEffect /></div>
               <div className="w-60 h-60 flex items-center justify-center"><UpdateList /></div>
+              <div className="w-60 h-60 flex items-center justify-center"><UserGreeting isLoggedIn={true} username="Ertu"/></div>
+              <div className="w-60 h-60 flex items-center justify-center"><WidthHeight /></div>
+              <div className="w-60 h-60 flex items-center justify-center"><MusicPlayer /></div>
+
             </div>
       </div>   
     </>

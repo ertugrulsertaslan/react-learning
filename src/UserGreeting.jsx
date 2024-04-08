@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 
 function UserGreeting(props){
-    const welcomeMessage =  <h2 className="welcome-message">
+    const welcomeMessage =  <h2 className="font-bold text-lg text-red-600">
                                 Welcome {props.username}
                             </h2>
-    const loginPrompt =     <h2 className="login-prompt">
-                                Please log in to continue
+    const loginPrompt =     <h2 className="font-bold text-lg text-red-600">
+                                Please Log In To Continue
                             </h2>
 
 
