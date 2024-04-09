@@ -29,8 +29,8 @@ const musicData = [
         artist: "Artist Name 2",
         album: "Album Name 2",
         duration: "4:20",
-        cover: "./src/assets/River Whyless Michigan Cherry (Official Music Video).m4a",
-        file: "./src/assets/ImagineDragonsBirds.m4a"
+        cover: "./src/assets/MichiganCherry.jpg",
+        file: "./src/assets/River Whyless Michigan Cherry (Official Music Video).m4a"
     },
   ];
 
@@ -73,11 +73,11 @@ function MusicPlayer(){
       
 
     return(
-        <div className='bg-gray-400'>
+        <div className='bg-orange-400 rounded'>
             <div className='text-center justify-center ms-9 me-9'>
-                <h2 className='text-lg text-white font-bold'>{musicData[currentTrackIndex].title}</h2>
+                <h2 className='text-lg text-stone-100 mt-1 font-bold'>{musicData[currentTrackIndex].title}</h2>
                 <img className='max-w-36 max-h-22 p-1 object-cover m-2' src={musicData[currentTrackIndex].cover} alt="" />
-                <div className='flex text-center justify-between items-center mt-5 mb-4'>
+                <div className='flex text-center justify-between items-center mt-4 mb-4'>
                     <button  onClick={prevTrack}><img src={prevBtn} alt="" /></button>
                     <button  onClick={playingButton}>{!isPlaying ? <img src={playBtn} alt="" />: <img src={pauseBtn} alt="" />}</button>
                     <button  onClick={nextTrack}><img src={nextBtn} alt="" /></button>
