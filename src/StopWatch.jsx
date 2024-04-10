@@ -47,12 +47,12 @@ function StopWatch() {
     }
     
     return(
-        <div className="stopwatch">
-            <div className="display">{formatTime()}</div>
-            <div className="controls">
-                {<button onClick={start} id="start-button" disabled={isRunning}>Start</button>}
-                <button onClick={stop} id="stop-button">Stop</button>
-                <button onClick={reset} id="reset-button">Reset</button>
+        <div className="items-center">
+            <div className="text-bold text-5xl font-mono mb-10 mt-4 text-amber-600">{formatTime()}</div>
+            <div className="flex text-center justify-between items-center p-5">
+                {<button onClick={start} className="" disabled={isRunning}><img src="/src/assets/play-32.png" alt="" /></button>}
+                <button onClick={stop}><img src="/src/assets/pause-32.png" alt="" /></button>
+                <button onClick={reset}><img src="/src/assets/reset-32.png" alt="" /></button>
             </div>
         </div>
     );
