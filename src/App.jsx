@@ -20,6 +20,7 @@ import UserGreeting from "./UserGreeting.jsx";
 import WidthHeight from "./WidthHeight.jsx";
 import MusicPlayer from "./MusicPlayer.jsx";
 import StopWatch from "./StopWatch.jsx";
+import ToDoList from "./ToDoList.jsx";
 function App() {
 
   
@@ -53,6 +54,7 @@ function App() {
               <div className="w-60 h-60 flex items-center justify-center"><WidthHeight /></div>
               <div className="w-60 h-60 flex items-center justify-center"><MusicPlayer /></div>
               <div className="w-60 h-60 flex items-center justify-center"><StopWatch /></div>
+              <div className="w-60 h-60 flex items-center justify-center"><ToDoList /></div>
             </div>
       </div>   
     </>
