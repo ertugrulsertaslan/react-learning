@@ -5,9 +5,9 @@ function ComponentD(){
     const user = useContext(UserContext);
 
     return(
-        <div className="p-1 m-1 border border-2 border-zinc-950">
-            <h1>ComponentD</h1>
-            <h2>{`Bye ${user}`}</h2>
+        <div className="p-1 m-1 border border-2 border-rose-500">
+            <h1 className="text-amber-500">ComponentD</h1>
+            <h2 className="text-amber-500">{`Bye ${user}`}</h2>
         </div>
     );
 }

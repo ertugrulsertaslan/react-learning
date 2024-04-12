@@ -30,18 +30,18 @@ function ComponentRef(){
     }
 
     return(
-        <div>
-            <button onClick={handleClick1}>
+        <div className="text-center">
+            <button className='text-orange-500 mb-2 mt-3' onClick={handleClick1}>
                 Click me 1 !
             </button>
             <input ref={inputRef1} />
 
-            <button onClick={handleClick2}>
+            <button className='text-purple-500 mb-2 mt-3' onClick={handleClick2}>
                 Click me 2 !
             </button>
             <input ref={inputRef2} />
 
-            <button onClick={handleClick3}>
+            <button className='text-amber-300 mb-2 mt-3' onClick={handleClick3}>
                 Click me 3 !
             </button>
             <input ref={inputRef3} />

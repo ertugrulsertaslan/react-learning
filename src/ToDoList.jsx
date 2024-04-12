@@ -29,7 +29,7 @@ function ToDoList(){
         setCount(c => c - 1);
         const updatedTask = tasks.filter((_, i) => i !== index);
         setTask(updatedTask);
-        
+
     }
     function moveTaskUp(index){
         if(index > 0){
@@ -49,31 +49,29 @@ function ToDoList(){
     }
 
     return(
-        
-        <div className="to-do-list text-center">
-            <h2 className="font-bold text-gray-800 m-2">To-Do-List</h2>
+        <div className="text-center">
+            <h2 className="font-bold text-white m-2 text-2xl">To-Do-List</h2>
             <div className="mt-8 mb-8">
-                <input className="w-36 h-8 bg-gray-400 placeholder-white" type="text" placeholder=" Enter a task..."value={newTask}onChange={handleInputChange} />
+                <input className="w-36 h-8 bg-gray-500 placeholder-white text-white" type="text" placeholder=" Enter a task..."value={newTask}onChange={handleInputChange} />
                 <button disabled = {disabled}
-                className="add-button w-14 h-8 bg-gray-400 ms-4 text-white"
+                className="w-14 h-8 bg-green-500 ms-4 text-white"
                 onClick={addTask}>
                     Add
                 </button>
             </div>
-
             <ol>
                 {tasks.map((task,index) =>
                 <li key={index}>
-                    <span className="text w-28 inline-block">{task}</span>
-                    <button className="delete-button bg-gray-400 mb-2 ms-1 p-1"
+                    <span className="text-white w-28 inline-block">{task}</span>
+                    <button className="bg-gray-400 mb-2 ms-1 p-1 bg-red-500 text-white"
                         onClick={ () => deleteTask(index)}>
                         Delete
                     </button>
-                    <button className="move-button bg-gray-400 h-8 ms-2"
+                    <button className="bg-gray-400 h-8 ms-2 bg-orange-500"
                         onClick={ () => moveTaskUp(index)}>
                         👆
                     </button>
-                    <button className="move-button bg-gray-400 h-8 ms-2"
+                    <button className="bg-gray-400 h-8 ms-2  bg-orange-500"
                         onClick={ () => moveTaskDown(index)}>
                         👇
                     </button>

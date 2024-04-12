@@ -9,11 +9,11 @@ function ComponentA(){
     const [user, setUser] = useState("✋");
 
     return(
-        <div className="p-1 border border-2 border-zinc-950">
-            <h1>ComponentA</h1>
-            <h2>{`Hello ${user}`}</h2>
+        <div className="p-1 border border-2 border-blue-500">
+            <h1 className='text-purple-500'>ComponentA</h1>
+            <h2 className='text-purple-500'>{`Hello ${user}`}</h2>
             <UserContext.Provider value={user}>
-                <ComponentB user = {user} />
+                <ComponentB  user = {user} />
             </UserContext.Provider>
         </div>
     );
