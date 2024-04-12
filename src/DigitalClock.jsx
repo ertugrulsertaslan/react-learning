@@ -29,10 +29,8 @@ function DigitalClock(){
         return (number < 10 ? "0" : "") + number;
     }
     return(
-        <div className="clock-container">
-            <div className="clock border p-2 rounded">
-                <span className='text-white font-bold font-mono text-4xl'>{formatTime()}</span>
-            </div>
+        <div className="border p-2 rounded">
+            <span className='text-white font-bold font-mono text-4xl'>{formatTime()}</span>
         </div>
     );
 }

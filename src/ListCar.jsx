@@ -51,7 +51,7 @@ function ListCar() {
                     <input type="text" className="border m-1 bg-orange-400 text-white text-bold" value={carYear} onChange={handleYearChange} maxLength="4" /><br/>
                     <input type="text" className="border m-1 bg-orange-400 text-white text-bold placeholder-white" placeholder="Enter car make" value={carMake}  maxLength="8" onChange={handleMakeChange}/><br/>
                     <input type="text" className="border m-1 bg-orange-400 text-white text-bold placeholder-white" placeholder="Enter car model" value={carModel}  maxLength="8" onChange={handleModelChange}/><br/>
-                    <button onClick={handleAddCar} className="mt-1 bg-amber-950 w-48 text-white font-bold">Add Car</button>
+                    <button onClick={handleAddCar} className="mt-1 bg-green-500 w-48 text-white font-bold">Add Car</button>
             </div>
             );
 

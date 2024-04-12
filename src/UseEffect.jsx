@@ -23,9 +23,9 @@ function UseEffect(){
     return(<>
         <div className="text-center">
             <p className="w-40 m-4 bg-violet-700 p-1 text-white">Count: {count}</p>
-            <button className="w-20 m-2 bg-violet-500 p-1 text-white" onClick={addCount}>Add</button>
-            <button className="w-20 m-2 bg-violet-500 p-1 text-white" onClick={subtractCount}>Subtract</button><br/>
-            <button className="w-30 m-2 bg-violet-500 p-1 text-white" onClick={changeColor}>Change Color</button>
+            <button className="w-20 m-2 bg-green-500 p-1 text-white" onClick={addCount}>Add</button>
+            <button className="w-20 m-2 bg-red-500 p-1 text-white" onClick={subtractCount}>Subtract</button><br/>
+            <button className="w-30 m-2 bg-amber-400 p-1 text-white" onClick={changeColor}>Change Color</button>
         </div>
             
     </>);
