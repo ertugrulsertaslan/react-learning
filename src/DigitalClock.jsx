@@ -30,8 +30,8 @@ function DigitalClock(){
     }
     return(
         <div className="clock-container">
-            <div className="clock">
-                <span>{formatTime()}</span>
+            <div className="clock border p-2 rounded">
+                <span className='text-white font-bold font-mono text-4xl'>{formatTime()}</span>
             </div>
         </div>
     );

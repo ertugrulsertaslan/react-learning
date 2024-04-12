@@ -21,6 +21,7 @@ import WidthHeight from "./WidthHeight.jsx";
 import MusicPlayer from "./MusicPlayer.jsx";
 import StopWatch from "./StopWatch.jsx";
 import ToDoList from "./ToDoList.jsx";
+import DigitalClock from "./DigitalClock.jsx";
 function App() {
 
   
@@ -32,29 +33,30 @@ function App() {
 
   return (
   <>
-    <div className="flex items-center justify-center bg-gradient-to-b from-teal-200 to-slate-50">
+    <div className="flex items-center justify-center bg-green-950">
       <div className = "grid grid-cols-3 gap-10 my-20">
-              <div className="w-60 h-60 flex items-center justify-center"><Button /></div>
-              <div className="w-60 h-60 flex items-center justify-center"><Card /></div>
+              <div className="w-60 h-60 flex items-center justify-center"><StopWatch /></div>
+              <div className="w-60 h-60 flex items-center justify-center"><WidthHeight /></div>
+              <div className="w-60 h-60 flex items-center justify-center"><DigitalClock /></div>
               <div className="w-60 h-60 flex items-center justify-center"><ColorPicker/></div>
-              <div className="w-60 h-60 flex items-center justify-center"><Student name="Ertugrul" age={24} isStudent={true} /></div>
-              <div className="w-60 h-60 flex items-center justify-center"><ComponentA /></div>
-              <div className="w-60 h-60 flex items-center justify-center"><ComponentRef /></div>
-              <div className="w-60 h-60 flex items-center justify-center"><Food /></div>
+              <div className="w-60 h-60 flex items-center justify-center"><ToDoList /></div>
               <div className="w-60 h-60 flex items-center justify-center"><Counter /></div>
-              <div className="w-60 h-60 flex items-center justify-center"><Footer /></div>
+              <div className="w-60 h-60 flex items-center justify-center"><ComponentRef /></div>
+              <div className="w-60 h-60 flex items-center justify-center"><ComponentA /></div>
+              <div className="w-60 h-60 flex items-center justify-center"><MusicPlayer /></div>
+              <div className="w-60 h-60 flex items-center justify-center"><UpdateList /></div>
+              <div className="w-60 h-60 flex items-center justify-center"><Student name="Ertugrul" age={24} isStudent={true} /></div>
               <div className="w-60 h-60 flex items-center justify-center">{fruits.length > 0 && <List items={fruits} category = "Fruits" />}</div>
+              <div className="w-60 h-60 flex items-center justify-center"><Card /></div>
+              <div className="w-60 h-60 flex items-center justify-center"><MyFavoriteCar /></div>
               <div className="w-60 h-60 flex items-center justify-center"><ListCar /></div>
               <div className="w-60 h-60 flex items-center justify-center"><MyComponent /></div>
-              <div className="w-60 h-60 flex items-center justify-center"><MyFavoriteCar /></div>
               <div className="w-60 h-60 flex items-center justify-center"><ProfilePicture /></div>
+              <div className="w-60 h-60 flex items-center justify-center"><Button /></div>
               <div className="w-60 h-60 flex items-center justify-center"><UseEffect /></div>
-              <div className="w-60 h-60 flex items-center justify-center"><UpdateList /></div>
-              <div className="w-60 h-60 flex items-center justify-center"><UserGreeting isLoggedIn={true} username="Ertu"/></div>
-              <div className="w-60 h-60 flex items-center justify-center"><WidthHeight /></div>
-              <div className="w-60 h-60 flex items-center justify-center"><MusicPlayer /></div>
-              <div className="w-60 h-60 flex items-center justify-center"><StopWatch /></div>
-              <div className="w-60 h-60 flex items-center justify-center"><ToDoList /></div>
+              <div className="w-60 h-60 flex items-center justify-center"><UserGreeting isLoggedIn={true} username="Ertu"/></div> 
+              <div className="w-60 h-60 flex items-center justify-center"><Food /></div>
+              <div className="w-60 h-60 flex items-center justify-center"><Footer /></div>
             </div>
       </div>   
     </>
