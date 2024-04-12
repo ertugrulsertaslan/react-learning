@@ -21,7 +21,6 @@ function StopWatch() {
     },[isRunning]);
 
     function start(){
-        console.log("started");
         setIsRunning(true);
         startTimeRef.current = Date.now() - elapsedTime;
     }
