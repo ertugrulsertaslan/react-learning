@@ -1,6 +1,7 @@
+import { useState } from "react";
 
 
-function Button(){
+function Button() {
     const styles = {
         backgroundColor: "hsl(200, 100%, 50%)",
         color: "white",
@@ -9,6 +10,7 @@ function Button(){
         border: "none",
         cursor: "pointer",
     }
+    const [isClicked, setIsClicked] = useState(false);
     /*
     
 
@@ -27,9 +29,12 @@ function Button(){
         }
     };
     */
-    const handleClick4 = (e) => e.target.textContent = "Ouch!";
+    return (
 
-    return(<button onClick={(e) => handleClick4(e)} style={styles}>Click Me </button>);
+        <button onClick={() => setIsClicked(true)} style={styles}>
+            {isClicked ? 'Ouch!' : 'Click Me'}
+        </button>
+    );
     //return(<button onClick={() => handleClick3("Bro")} style={styles}>Click Me </button>);
     //return(<button onClick={() => handleClick2("Bro")} style={styles}>Click Me </button>);
 }
