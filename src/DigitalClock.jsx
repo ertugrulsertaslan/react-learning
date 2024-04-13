@@ -1,37 +1,40 @@
-import React,{useState,useEffect} from 'react';
+import React, { useState, useEffect } from "react";
 
-function DigitalClock(){
+function DigitalClock() {
+  const [time, setTime] = useState(new Date());
 
-    const [time, setTime] = useState(new Date);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
 
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setTime(new Date());
-        },1000);
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
 
-        return () => {
-            clearInterval(intervalId);
-        }
-    },[])
+  function formatTime() {
+    let hours = time.getHours();
+    const minutes = time.getMinutes();
+    const seconds = time.getSeconds();
 
-    function formatTime() {
-        let hours = time.getHours();
-        const minutes = time.getMinutes();
-        const seconds = time.getSeconds();
+    const meridiem = hours >= 12 ? "PM" : "AM";
 
-        const meridiem = hours >= 12 ? "PM" : "AM";
-        
-        hours = hours % 12 || 12 ;
+    hours = hours % 12 || 12;
 
-        return `${padZero(hours)}:${padZero(minutes)}:${padZero(seconds)} ${meridiem}`;
-    }
-    function padZero(number){
-        return (number < 10 ? "0" : "") + number;
-    }
-    return(
-        <div className="border p-2 rounded">
-            <span className='text-white font-bold font-mono text-4xl'>{formatTime()}</span>
-        </div>
-    );
+    return `${padZero(hours)}:${padZero(minutes)}:${padZero(
+      seconds
+    )} ${meridiem}`;
+  }
+  function padZero(number) {
+    return (number < 10 ? "0" : "") + number;
+  }
+  return (
+    <div className="border p-2 rounded">
+      <span className="text-white font-bold font-mono text-3xl">
+        {formatTime()}
+      </span>
+    </div>
+  );
 }
-export default DigitalClock
+export default DigitalClock;
