@@ -1,7 +1,12 @@
-function ProfilePicture() {
+import { useState } from "react";
+const imageUrl = "./src/assets/ferrari_photo.png";
 
-    const imageUrl = './src/assets/ferrari_photo.png';
-    const handleClick = (e) => e.target.style.display  = "none";
-    return(<img onClick={(e) => handleClick(e)} src={imageUrl}></img>);
-};
-export default ProfilePicture
+function ProfilePicture() {
+  const [isClicked, setIsClicked] = useState(false);
+
+  if (isClicked) {
+    return <></>;
+  }
+  return <img onClick={() => setIsClicked(true)} src={imageUrl}></img>;
+}
+export default ProfilePicture;
