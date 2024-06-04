@@ -83,11 +83,7 @@ function MusicPlayer() {
             <img src={prevBtn} alt="" />
           </button>
           <button onClick={playingButton}>
-            {!isPlaying ? (
-              <img src={playBtn} alt="" />
-            ) : (
-              <img src={pauseBtn} alt="" />
-            )}
+            <img src={!isPlaying ? playBtn : pauseBtn} alt="" />
           </button>
           <button onClick={nextTrack}>
             <img src={nextBtn} alt="" />
