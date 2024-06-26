@@ -49,10 +49,7 @@ after running scripts go to `http://localhost:5173` with your browser to use the
 ## Screenshots 📸
 <div style="display: flex; flex-direction: row;">
     <img src="screenshots/react-learning-photo.png" alt="Home Page" style="width: 50%; margin-right: 4%;">
-
 </div>
-
-
 
 
 ## License 📄
