@@ -11,8 +11,8 @@ const musicData = [
     artist: "Artist Name 1",
     album: "Album Name 1",
     duration: "3:45",
-    cover: "./src/assets/TheDrums-days.jpg",
-    file: "./src/assets/TheDrum-Days.m4a",
+    cover: "/src/assets/TheDrums-days.jpg",
+    file: "/src/assets/TheDrum-Days.m4a",
   },
   {
     id: 2,
@@ -20,8 +20,8 @@ const musicData = [
     artist: "Artist Name 2",
     album: "Album Name 2",
     duration: "4:20",
-    cover: "./src/assets/Imagine-Dragons-album-photo.jpg",
-    file: "./src/assets/ImagineDragonsBirds.m4a",
+    cover: "/src/assets/Imagine-Dragons-album-photo.jpg",
+    file: "/src/assets/ImagineDragonsBirds.m4a",
   },
   {
     id: 3,
@@ -29,8 +29,8 @@ const musicData = [
     artist: "Artist Name 2",
     album: "Album Name 2",
     duration: "4:20",
-    cover: "./src/assets/MichiganCherry.jpg",
-    file: "./src/assets/River Whyless Michigan Cherry (Official Music Video).m4a",
+    cover: "/src/assets/MichiganCherry.jpg",
+    file: "/src/assets/River Whyless Michigan Cherry (Official Music Video).m4a",
   },
 ];
 

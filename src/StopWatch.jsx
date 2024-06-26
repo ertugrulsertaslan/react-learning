@@ -49,14 +49,14 @@ function StopWatch() {
       <div className="flex text-center justify-between items-center p-5">
         {
           <button onClick={start} className="" disabled={isRunning}>
-            <img src="/src/assets/play-32.png" alt="" />
+            <img src="src/assets/play-32.png" alt="" />
           </button>
         }
         <button onClick={stop}>
-          <img src="/src/assets/pause-32.png" alt="" />
+          <img src="src/assets/pause-32.png" alt="" />
         </button>
         <button onClick={reset}>
-          <img src="/src/assets/reset-32.png" alt="" />
+          <img src="src/assets/reset-32.png" alt="" />
         </button>
       </div>
     </div>
