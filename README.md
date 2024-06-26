@@ -4,9 +4,10 @@ React is a JavaScript library for building user interfaces. React is used to bui
 
 ## Features 🌟
 
-- 🌟🖥️ User-friendly interface
-- 🔀🃏 Shuffling of cards
-- 🎯🏆 Matching and scoring system
+- 🖥️ User-friendly interface
+- 🧩 Component-based architecture
+- 🌐 State management and updates
+- - 🚀 Usage of React Hooks
 
 
 ## Technologies Used 💻
