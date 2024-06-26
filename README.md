@@ -7,7 +7,7 @@ React is a JavaScript library for building user interfaces. React is used to bui
 - 🖥️ User-friendly interface
 - 🧩 Component-based architecture
 - 🌐 State management and updates
-- - 🚀 Usage of React Hooks
+- 🚀 Usage of React Hooks
 
 
 ## Technologies Used 💻
