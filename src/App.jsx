@@ -22,6 +22,7 @@ import MusicPlayer from "./MusicPlayer.jsx";
 import StopWatch from "./StopWatch.jsx";
 import ToDoList from "./ToDoList.jsx";
 import DigitalClock from "./DigitalClock.jsx";
+import ParentContext from "./ParentContext.jsx";
 
 function App() {
   const fruits = [
