@@ -9,7 +9,7 @@ function ParentContext() {
   return (
     <Context.Provider value={[clicked, SetClicked]}>
       <Child />
-      <h1> {clicked ? "true" : "false"}</h1>
+      <h1 className="text-black bg-white"> {clicked ? "true" : "false"}</h1>
     </Context.Provider>
   );
 }
